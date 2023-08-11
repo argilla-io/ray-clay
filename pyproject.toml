@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ray-clay"
+version = "0.1.0"
+description = ""
+authors = ["davidberenstein1957 <david.m.berenstein@gmail.com>"]
+readme = "README.md"
+packages = [{include = "ray_clay"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+argilla = {extras = ["server"], version = "^1.13.3"}
+ray = {extras = ["serve"], version = "^2.6.2"}
+pydantic = "<2"
+setfit = "^0.7.0"
+seqeval = "^1.2.2"
+evaluate = "^0.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
